@@ -26,7 +26,7 @@
 **# 准备阶段**
 - 时间：2023/04/25-2023/05/09
 - 方式：线上交流
-- 相关资料：[第一份草稿](https://github.com/LeoDreamer2004/DSA2023/blob/main/draft_1.ipynb)
+- 相关资料：[第一份草稿](https://github.com/LeoDreamer2004/DSA2023/blob/main/code/draft_1.ipynb)
 - 准备过程：
     1. 自学 `Numpy` 库，随时关注源代码的更新、理解 `Board.py`；
     2. 初步形成贪心算法的草稿；
@@ -39,7 +39,7 @@
 - 时间：2023/05/09
 - 方式：线下交流
 - 主讲：原梓轩
-- 相关资料：[第二份草稿](https://github.com/LeoDreamer2004/DSA2023/blob/main/draft_2.ipynb)
+- 相关资料：[第二份草稿](https://github.com/LeoDreamer2004/DSA2023/blob/main/code/draft_2.ipynb)
 - 讨论内容：
     1. 明确目前发布的游戏规则；
     2. 讲解第一份草稿及以下减小算法复杂度的操作：  
@@ -57,7 +57,7 @@
 - 时间：2023/05/19
 - 方式：线下交流
 - 主讲：原梓轩
-- 相关资料：[测试代码](https://github.com/LeoDreamer2004/DSA2023/blob/main/code1.py)，[讨论用PPT](https://github.com/LeoDreamer2004/DSA2023/blob/main/数算大作业23-05-19讨论.pptx)
+- 相关资料：[测试代码](https://github.com/LeoDreamer2004/DSA2023/blob/main/code/code1.py)，[讨论用PPT](https://github.com/LeoDreamer2004/DSA2023/blob/main/discussion/数算大作业23-05-19讨论.pptx)
 - 讨论内容：
     - **对正式发布的源代码的理解和处理**：
     1. 由于源代码已由技术组大量优化，并且数据规模降低，关于消除的计算效率已经得到提高，为避免后续出错，不对源代码做过大改动；  
@@ -89,7 +89,7 @@
 - 时间：2023/05/28
 - 方式：线下交流
 - 主讲：程子劼，原梓轩
-- 相关资料：[会议前代码](https://github.com/LeoDreamer2004/DSA2023/blob/main/code2.py)，[更新代码](https://github.com/LeoDreamer2004/DSA2023/blob/main/code3.py)
+- 相关资料：[会议前代码](https://github.com/LeoDreamer2004/DSA2023/blob/main/code/code2.py)，[更新代码](https://github.com/LeoDreamer2004/DSA2023/blob/main/code/code3.py)
 - 讨论内容：
     1. 强调先前同学发现的优势情形下，如果对手布局则直接回退对手操作的策略，解释在这种情形下规则完善后的更新代码；
     2. 建议我方优势时使用 `destroy` 方法，尽量降低对方下一步的操作得分或突围可能。在优势情况下，优先检查是否存在使游戏直接结束的操作；
@@ -106,7 +106,7 @@
 **# 终期修改阶段**
 - 时间：2023/05/28-2023/06/02
 - 方式：线上交流
-- 相关资料：[最终成果](https://github.com/LeoDreamer2004/DSA2023/blob/main/official.py)
+- 相关资料：[最终成果](https://github.com/LeoDreamer2004/DSA2023/blob/main/code/official.py)
 - 解决问题：
     1. 修改alpha-beta剪枝中的bug，使贪心算法可搜索三层；
     2. 修复遗漏“凸”字形的可交换、消除的形状的bug和底层计算分数的错误；
@@ -134,7 +134,7 @@
 
 ### **（四）程序代码说明**
 
-以下展示的是在[正式参赛代码](https://github.com/LeoDreamer2004/DSA2023/blob/main/official.py)基础上，添加更多注释和遵照更加规范的代码风格新写出的[美化代码](https://github.com/LeoDreamer2004/DSA2023/blob/main/beautify.py)。形式上可能略有不同，但是算法内容是一致的。
+以下展示的是在[正式参赛代码](https://github.com/LeoDreamer2004/DSA2023/blob/main/code/official.py)基础上，添加更多注释和遵照更加规范的代码风格新写出的[美化代码](https://github.com/LeoDreamer2004/DSA2023/blob/main/code/beautify.py)。形式上可能略有不同，但是算法内容是一致的。
 
 **# 各路策略**
 
@@ -457,7 +457,7 @@ def pile(*tuples) -> Tuple[float, float]:
 **# 初步测试阶段**
 
 - 时间：2023/05/16
-- 代码：[第二份草稿](https://github.com/LeoDreamer2004/DSA2023/blob/main/draft_2.ipynb)
+- 代码：[第二份草稿](https://github.com/LeoDreamer2004/DSA2023/blob/main/code/draft_2.ipynb)
 - 测试结果：  
     1. 在规定时间内，两层贪心算法远胜于一层，但由于当时数据规模大且技术组未优化，效率很低；
         <center>
@@ -479,7 +479,7 @@ def pile(*tuples) -> Tuple[float, float]:
 **# 中期测试阶段 I**
 
 - 时间：2023/05/16-2023/05/19
-- 测试代码：[第一份正式代码](https://github.com/LeoDreamer2004/DSA2023/blob/main/code1.py)
+- 测试代码：[第一份正式代码](https://github.com/LeoDreamer2004/DSA2023/blob/main/code/code1.py)
 - 测试结果：
     1. 我方前期策略比较保守，面对对方策略激进的情况，难以在前期超越，后期被拉开较大分差；
     2. “破局策略”仍存失误和不足，需要改进；
@@ -504,7 +504,7 @@ def pile(*tuples) -> Tuple[float, float]:
 **# 中期测试阶段 II**
 
 - 时间：2023/05/24-2023/05/28
-- 测试代码：[会议用代码](https://github.com/LeoDreamer2004/DSA2023/blob/main/code2.py)
+- 测试代码：[会议用代码](https://github.com/LeoDreamer2004/DSA2023/blob/main/code/code2.py)
 - 测试结果：若我方落后且试图布局，对方会将我方交换的棋子重新交换回来，达到封死我方的目的。在这种情况下，我方布局失去意义，也就是说在劣势情形下必须采取消除操作。
 
 - 代码改进：
@@ -514,7 +514,7 @@ def pile(*tuples) -> Tuple[float, float]:
 
 **# 最终测试阶段**
 - 时间：2023/05/28-2023/06/03
-- 测试代码：[更新代码](https://github.com/LeoDreamer2004/DSA2023/blob/main/code3.py)，[正式代码](https://github.com/LeoDreamer2004/DSA2023/blob/main/official.py)
+- 测试代码：[更新代码](https://github.com/LeoDreamer2004/DSA2023/blob/main/code/code3.py)，[正式代码](https://github.com/LeoDreamer2004/DSA2023/blob/main/code/official.py)
 - 测试结果：
     1. 我方优势时强行结束游戏的代码仍有超时风险，需要进一步改进；但同时也观察到，对方存在未设置防超时保护算法以至失败的现象。
     2. 我方代码难以将小优势扩大，导致后期被追上；决定取消容忍度关于比赛进程的变化，而只关注分数差距，增加使用贪心算法的概率。
